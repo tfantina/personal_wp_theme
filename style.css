@@ -1,0 +1,451 @@
+/*
+Theme Name: TravisFanitna 2017
+Author: Travis Fantina
+Author URI: http://www.travisfantina.com
+Description: Basic theme for travisfantina.com, personal portfolieo and blog of
+Travis Fantina, likely, there is little application for this theme outside of
+my usage.
+Version: 1.2
+Text Domain: TravisFanitna
+
+
+*/
+
+
+/* Standard stuff */
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,600||Open+Sans:300,700');
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  color: rgb(80, 85, 80);
+  font-family: 'Open Sans', 'helvetica', 'ariel', sans-serif ;
+  font-size: 14px;
+  background-color: rgb(255, 255, 255);
+  background: -webkit-linear-gradient(top, rgb(255, 232, 240), rgb(224, 255, 252));
+  background: -moz-linear-gradient(top, rgb(255, 232, 240), rgb(224, 255, 252));
+  background: -o-linear-gradient(top, rgb(255, 232, 240), rgb(224, 255, 252));
+  background:linear-gradient(top, rgb(255, 232, 240), rgb(224, 255, 252));
+  background-attachment: fixed;
+  font-weight: lighter;
+  line-height: 30px;
+}
+
+
+a:link, a:visited {
+ color: rgb(0, 204, 174);
+}
+a:active, a:hover {
+  color: rgb(238, 147, 147);
+  text-decoration: none;
+}
+
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  color: rgb(0, 204, 174);
+  font-family: 'Josefin Sans Semibold', helvetica, arial, sans-serif;
+  font-weight: normal;
+
+}
+
+/*over ride bootstrap rows */
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+
+/* Headdings & titles */
+.blog-header {
+  padding-top: 75px;
+  padding-bottom: 20px;
+}
+
+
+.site-title {
+  color: rgb(0, 204, 174);
+  font-family: 'Josefin Sans Semibold', helvetica, arial, sans-serif;
+  font-size: 45px;
+  font-weight: 300;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+a.site-title:link, a.site-title:active, a.site-title:visited {
+  padding-top: 15px;
+  color: rgb(0, 204, 174);
+  text-decoration: none;
+  font-size: 45px;
+  font-family: 'Josefin Sans', helvetica, arial, sans-serif;
+  font-weight: normal;
+}
+
+a.site-title:hover{
+  color: rgb(238, 147, 147);
+  text-decoration: none;
+  font-size: 45px;
+  font-family: 'Josefin Sans', helvetica, arial, sans-serif;
+  font-weight: normal;
+}
+
+
+.blog-description {
+  font-size: 20px;
+  color: #999;
+}
+
+@media screen and (max-width: 940px) {
+  a.site-title:link, a.site-title:active, a.site-title:visited a.site-title:hover{
+    font-size: 24px;
+    margin-left: 0px;
+  }
+
+  .navbar-brand {
+    padding: 0px, 0px;
+  }
+
+
+
+
+}
+
+/* navigation bar */
+
+
+.navbar-header {
+  height: 60px;
+}
+
+
+.navbar {
+  border: 0px;
+  height: 60px;
+  background-color: rgb(80, 85, 80);
+}
+
+.container-fluid {
+  background-color: rgb(80,85,80);
+  height: 60px;
+}
+
+.navbar-collapse {
+ margin-top: -30px;
+}
+
+.navbar-brand {
+  display: block;
+  font-size: 60px;
+  padding: 0px 0px;
+}
+
+.navbar-brand > a > .brand-icon {
+  padding: 5px;
+}
+
+.navbar-nav {
+  padding-top: 7px;
+  color: rgb(252, 255, 254);
+  font-size: 30px;
+  padding-right: 20px;
+  margin: 0px 0px;
+}
+
+.navbar-nav>li>a:link, .navbar-nav>li>a:active, .navbar-nav>li>a:visited {
+  font-size: 30px;
+  font-family: 'Josefin Sans', helvetica, arial, sans-serif;
+  color: rgb(252, 255, 254);
+  font-weight: 300;
+  background-color: rgb(80, 85, 80);
+}
+.navbar-nav>li>a:hover {
+  font-size: 30px;
+  color: rgb(238, 147, 147);
+  font-family: 'Josefin Sans', helvetica, arial, sans-serif;
+  font-weight: 300;
+  background-color: rgb(80, 85, 80);
+}
+
+
+/* panels */
+.panel-info>.panel-heading {
+  background-color: rgba(152, 209, 200, 0.8);
+  padding-left: 25px;
+  height: 46px;
+  border-radius: 0px;
+
+}
+
+.panel-info {
+  background-color: rgba(246, 251, 255, 0.8);
+  width: 87%;
+  float: left;
+  z-index: -1;
+  padding: 0px;
+  border-radius: 0px;
+  box-shadow: 0px 5px 10px 0px rgba(75, 75, 75, 0.74);
+}
+
+.panel>.panel-info>.panel-body {
+  padding: 25px;
+  padding-left: 40px;
+  background-color: rgb(163, 198, 228);
+  overflow: scroll;
+}
+.blog-post-title {
+  color: rgb(80, 85, 80);
+  text-decoration: none;
+  font-family: 'Josefin Sans', helvetica, arial, sans-serif;
+  font-weight: 300;
+}
+a.blog-post-title:link, a.blog-post-title:active, a.blog-post-title:visited {
+  color: rgb(80, 85, 80);
+  font-family: 'Josefin Sans', helvetica, arial, sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+a.blog-post-title:hover {
+  color: rgb(238, 147, 147);
+}
+
+.panel-footer {
+  background-color: rgb(243, 249, 255);
+  padding: 10px 10px;
+}
+.panel-footer h3 {
+  color: rgb(80, 85, 80);
+  font-size: 18px;
+  text-decoration: none;
+  font-family: 'Josefin Sans', helvetica, arial, sans-serif;
+  font-weight: 300;
+}
+
+/* panel resize magic */
+
+@media screen and (max-width: 768px) {
+  .panel-info {
+    border-color: rgb(145, 255, 237);
+    width: 100%;
+    float: left;
+    overflow: scroll;
+    z-index: -1;
+    padding: 0px;
+  }
+}
+
+/* sidebar */
+
+.sidebar {
+  margin-top: 41px;
+  width: 13%;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  height: 100%;
+  background-color: rgb(128, 131, 131);
+  padding-top: 50px;
+  z-index: 1;
+}
+
+.sidebar-content {
+  height: 60%;
+  overflow: scroll;
+  text-align: left;
+  margin-left: 30px;
+}
+
+.sidebar-logo {
+  position: fixed;
+  max-height: 45%;
+  bottom: 20px;
+  opacity: .5;
+}
+
+
+.wrapper {
+  min-height: 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+/* Carousel */
+.imgs {
+  width: 100%;
+}
+.carousel-inner {
+  width: 100%;
+  max-height: 700px;
+  max-width: 1500px;
+}
+
+
+.carousel-caption {
+  right: 20%;
+  left: 20%;
+  padding-bottom: 16px;
+  color: rgb(80, 85, 80);
+  font-size: 16px;
+  background-color: rgba(194, 253, 255, 0.3);
+  border-radius: 5px;
+}
+
+.carousel-control.right, .carousel-control.left {
+  background-image: none;
+}
+
+/* Footer */
+
+.footer>.containter {
+  height: 25px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px
+}
+.footer>.row {
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 25px;
+  background-color: rgb(80, 85, 80);
+  z-index: 2;
+}
+
+.footer p {
+  font-size: 12px;
+  color: rgb(145, 255, 237);
+  height: 10px;
+  padding-bottom: 5px;
+}
+
+
+
+.commentlist li .even {
+    background-color: rgba(51, 51, 51, 0.59);
+}
+
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+        white-space: nowrap;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
