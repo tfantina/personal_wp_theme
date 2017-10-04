@@ -52,7 +52,7 @@
 </div>
   <div class="panel-body">
     <div class="col-xs-10 col-xs-offset-1">
-    <? if (comments_open() || get_comments_number()) :
+    <?php if (comments_open() || get_comments_number()) :
       comments_template();
     endif; ?>
 
