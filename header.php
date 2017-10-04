@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +8,7 @@
     <meta name="description" content="<?php echo get_bloginfo('description'); ?>">
     <meta name="author" content="">
 
+    <title><?php bloginfo('name'); wp_title( $sep = "||");?></title>
 
     <!-- Bootstrap core CSS & Jquery & Normalize-->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
@@ -23,11 +24,12 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+   <?php if ( is_singular() ) wp_enqueue_script( "comment-reply" ); ?>
     <?php wp_head(); ?>
   </head>
 
-  <body>
+  <body  >
+
     <!-- start page wrapper -->
     <div class="wrapper">
     <!-- navbar -->

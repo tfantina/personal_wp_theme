@@ -1,5 +1,5 @@
 <!-- post start-->
-
+ <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 <div class="panel panel-info">
   <div class="panel-heading">
 
@@ -18,6 +18,7 @@
     <div class="col-xs-10 col-sm-offset-1">
 
     <?php the_content(); ?>
+     <?php wp_link_pages(); ?>
   </div>
 </div>
   <div class="panel-footer">

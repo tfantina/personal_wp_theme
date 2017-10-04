@@ -3,6 +3,7 @@
 } ?>
 
 
+  <?php comment_form(); ?>
   <?php if(have_comments()) : ?>
 
 
@@ -21,5 +22,4 @@
     </ul>
   <?php endif; ?>
 
-
-  <?php comment_form(); ?>
+   <?php paginate_comments_links(); ?>
