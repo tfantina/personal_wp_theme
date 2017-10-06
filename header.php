@@ -55,6 +55,8 @@
 
         </div>
         <div class="collapse navbar-collapse" id="navbar-collapse">
+    
+
           <ul class="nav navbar-nav navbar-right">
               <li><a href="index.php/portfolio">Work</a></li>
               <li><a href="index.php/resources">Projects</a></li>
