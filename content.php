@@ -33,6 +33,9 @@
           </div>
           <div class="col-xs-3 col-sm-offset-4">
             <?php if(is_single()): the_tags( 'Tags: ',', '  ); endif; ?> <h3>
+              <?php //this will be removed if the theme goes for wider distribution
+              if ( class_exists( 'Add_to_Any_Subscribe_Widget' ) ) { Add_to_Any_Subscribe_Widget::display(); } ?>
+
             <?php if (!is_single()):
              comments_number('no comments', 'one comment', '% comments');
            endif; ?> </h3>
