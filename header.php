@@ -54,16 +54,15 @@
           </nav>
 
         </div>
-        <div class="collapse navbar-collapse" id="navbar-collapse">
-    
 
-          <ul class="nav navbar-nav navbar-right">
-              <li><a href="index.php/portfolio">Work</a></li>
-              <li><a href="index.php/resources">Projects</a></li>
-              <li><a href="index.php/blog">Blog</a></li>
-              <li><a href="index.php/photos">Photos</a><li>
+  <div class="collapse navbar-collapse" id="navbar-collapse">
+          <?php wp_nav_menu( array( 'theme_location' => 'header-menu',
+          'menu_class' => 'nav navbar-nav navbar-right',
+          'menu_id' => 'navbar-collapse',
+          'container' => 'ul',
 
-          </ul>
+          'items_wrap' => '<li></li>' ) ); ?>
+
 
       </div>
     </div>
